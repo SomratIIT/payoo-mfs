@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prevent Form Reload</title>
+</head>
+<body>
+
+<form id="myForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+  document.getElementById("myForm").addEventListener("submit", function(event){
+    event.preventDefault(); // Stop the page from reloading
+    // Your form handling logic here (e.g., AJAX request)
+    alert("Form submitted without reloading!");
+  });
+</script>
+
+</body>
+</html>
