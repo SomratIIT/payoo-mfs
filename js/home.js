@@ -13,4 +13,28 @@ console.log(addMoneyInput);
 
 const addPinInput= document.getElementById('input-pin-number').value;
 console.log(addPinInput);
+
+// Step 3.5----verify the pin number
+if(addPinInput==='1998')
+{
+    console.log('Successfully ' +addMoneyInput+' Taka Added');
+
+    //Step-4  get the current balance
+    
+    const balance=document.getElementById('account-balance').innerText;
+    console.log(balance);
+
+    const newbalance= parseFloat(addMoneyInput)  + parseFloat(balance);
+    console.log('Total Money = '+newbalance);
+
+    document.getElementById('account-balance').innerText =newbalance;
+}
+else{
+
+    alert('Failed To Add Money');
+}
+
 })
+
+
+
