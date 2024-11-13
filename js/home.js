@@ -6,7 +6,9 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
 
 // Step 2 --get money
 const addMoneyInput = document.getElementById('input-add-money').value;
+
 console.log(addMoneyInput);
+
 
 
 // Step 3--- get the pin number
