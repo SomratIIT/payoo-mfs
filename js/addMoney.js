@@ -2,7 +2,8 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
 {   
     event.preventDefault();
 
-    const newMoney = document.getElementById('input-add-money').value;
+    // const newMoney = document.getElementById('input-add-money').value;
+ newMoney=   getInputFieldValueById();
     const pinNumber =document.getElementById('input-pin-number').value;
     
     if(pinNumber==='1998'){

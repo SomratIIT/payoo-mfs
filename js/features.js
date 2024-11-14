@@ -6,6 +6,9 @@ document.getElementById('btn-show-cash-out').addEventListener('click',function()
     document.getElementById('cash-out-form').classList.remove('hidden');
     document.getElementById('addMoneyFrom').classList.add('hidden')
 })
+
+
+// show Add Money Button
 document.getElementById('btn-show-add-money').addEventListener('click',function(){
     
   
