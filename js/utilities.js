@@ -5,3 +5,8 @@ function getInputFieldValueById(){
     return newMoney;
 }
 
+function getInputFieldPinById(id){
+    const pinNumber =document.getElementById(id).value;
+
+    return pinNumber;
+}
